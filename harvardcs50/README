@@ -1,0 +1,47 @@
+
+
+		GIT 
+git clone
+git add <file name>
+git commit -a -m "message"
+git status
+git push 
+//merge conflicts
+git log
+git reset --hard <commit>
+git reset --hard origin/master
+//branch
+git branch <branch name>
+git branch 
+git checkout <branch name>
+git push --set-upstream origin feature
+//remotes
+git fetch
+git merge
+
+		HTML 5
+audio 
+video 
+dataset
+
+		CSS
+: //means properties
+a, b //multiple elements selector
+a b descendant selector//
+a > b //child selector
+a + b //adjacent sibling selector
+[a=b] // attribut selector
+a:b //pseudoclass selector
+a:: b // pseudoelement selector
+
+	properties
+before 
+after
+display: flex;
+flex-wrap : wrap;
+
+@media 
+
+		SASS
+sass <file>.scss: <file>.css
+sass --watch <file>.scss: <file>.css

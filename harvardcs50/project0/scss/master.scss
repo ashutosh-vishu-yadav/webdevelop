@@ -1,0 +1,129 @@
+@import "ui-variables.css";
+$normal-padding: 2px;
+#nav{
+  float:auto;
+  background-color: black;
+}
+.nav-link{
+  height: 30px;
+  float:right;
+  position:sticky;
+  padding:5px;
+  margin:auto;
+  text-decoration: none;
+}
+
+
+footer {
+  clear:both;
+  background-color:	#091b45;
+  margin: auto;
+  padding: 40px;
+  a{
+    color: black;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+body {
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #d8dfe4;
+}
+
+.heading{
+  text-align: center;
+}
+
+#tribute-info > p{
+  margin: auto;
+  padding: 5px;
+  background-color:	#5f6fa2;
+}
+
+
+
+.img-fluid {
+  height: 50%;
+  width: auto;
+}
+
+
+/*
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 780px) {
+  .row {
+    display: grid;
+ }
+ .row > .col{
+   margin:30px;
+   padding: 20px;
+   background-color: black;
+ }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 576px) {
+   .row {
+     display:flex;
+  }
+  .row > .col{
+    margin: 30px;
+    padding: 20px;
+    background-color: black;
+  }
+ }
+*/
+// Large devices (desktops, 992px and up)
+@media (min-width: 1200px) {
+  .row {
+    display:flex;
+ }
+ .row > .col{
+   border-top: 10px solid	#5f6fa2;
+   //border-radius: 10px;
+   margin: 20px;
+   padding: 20px;
+   background-color:   	#d8dfe4;
+ }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+  .row {
+    display:grid;
+ }
+ .row > .col{
+   border-top: 10px solid #5f6fa2;
+   margin: 5px;
+   padding: 20px;
+   background-color:  #d8dfe4;
+ }
+}
+
+//inheritense
+%normal-contant {
+  border: solid black;
+  border-radius: 4px;
+  border-color: #3e4444;
+  background-color:  	#eeeeee;
+}
+
+.img-div, p, section{
+  @extend %normal-contant;
+  padding: $normal-padding;
+}
+
+%lists {
+  list-style: none;
+  position: relative;
+  padding: $normal-padding;
+  border-color: #3e4444;
+  background-color:  	#eeeeee;
+}
+
+li {
+  @extend %lists;
+}
