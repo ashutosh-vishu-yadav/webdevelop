@@ -5,32 +5,41 @@
 
 footer { clear: both; background-color: #091b45; margin: auto; padding: 40px; }
 footer a { color: black; }
-footer p { text-align: center; }
+footer p { color: white; text-align: center; }
+footer #footer-list { color: #091b45; }
+footer #footer-list li a { color: white; }
 
-body { margin-left: 40px; margin-right: 40px; background-color: #d8dfe4; }
+body { margin-left: 40px; margin-right: 40px; background-color: #0d2561; }
+body main { background-color: #d8dfe4; }
 
 .heading { text-align: center; }
 
 #tribute-info > p { margin: auto; padding: 5px; background-color: #5f6fa2; }
 
-.img-fluid { height: 50%; width: auto; }
+div { padding: 5px; }
+
+.jumbotron, .footer-div { margin: 0 20% 0 20%; padding: 5%; }
 
 /*
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 780px) { .row { display: grid; } .row > .col{ margin:30px; padding: 20px; background-color: black; }
+@media (max-width: 780px) { .row { display: grid; } .row > .col{ margin:30px; padding: 20px; background-color: #0d2561; }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 576px) { .row { display:flex; } .row > .col{ margin: 30px; padding: 20px; background-color: black; } }
+@media (min-width: 576px) { .row { display:flex; } .row > .col{ margin: 30px; padding: 20px; background-color: #0d2561; } }
 */
 @media (min-width: 1200px) { .row { display: flex; }
-  .row > .col { border-top: 10px solid	#5f6fa2; margin: 20px; padding: 20px; background-color: #d8dfe4; } }
+  .row > .col { border-top: 10px solid	#5f6fa2; margin: 20px; padding: 20px; background-color: #d8dfe4; }
+  .img-fluid { height: 100%; width: 100%; } }
 @media (max-width: 1200px) { .row { display: grid; }
-  .row > .col { border-top: 10px solid #5f6fa2; margin: 5px; padding: 20px; background-color: #d8dfe4; } }
-.img-div, p, section { border: solid black; border-radius: 4px; border-color: #3e4444; background-color: #eeeeee; }
+  .row > .col { border-top: 10px solid #5f6fa2; margin: 5px; padding: 20px; background-color: #d8dfe4; }
+  .img-fluid { height: 100%; width: 100%; } }
+.section { border: solid black; border-radius: 4px; border-color: #3e4444; background-color: #eeeeee; }
 
-.img-div, p, section { padding: 2px; }
+.section { padding: 5px; }
 
-li { list-style: none; position: relative; padding: 2px; border-color: #3e4444; background-color: #eeeeee; }
+div .paragraph, div .question, .lists { list-style: none; position: relative; margin: 10px; padding: 5px; border-color: #3e4444; background-color: #eeeeee; }
+
+.lists li { padding: 5px; }
 
 /*# sourceMappingURL=master.css.map */

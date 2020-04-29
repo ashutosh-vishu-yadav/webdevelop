@@ -3,7 +3,6 @@
     <head>
         <title>Allen Turing</title>
         <meta charset="utf-8">
-        <meta name="twitter:" content="">
         <meta name="description" content="Free Web tutorials">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="rain">
@@ -15,7 +14,7 @@
     </head>
     <body>
       <header>
-        <a class="navbar-brand" href="#">Fixed navbar</a>
+        <a class="sticky-top" href="#">Fixed navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           <img src="./img/" alt="">
@@ -47,18 +46,24 @@
         </div>
         </nav>
       </header>
+      <main>
           <div class="">
           <h1>Alan Mathison Turing</h1>
-          <div class="img-div">
-            <img src="./img/turing.jpg" class="img-fluid" alt="Allen turing siting in the chair.">
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <img src="./img/turing.jpg" class="img-fluid" alt="Allen turing siting in the chair.">
+              </div>
+              <div class="col-sm">
+                <img src="./img/turing-computer.jpg" class="img-fluid"  alt="turing machine.">
+              </div>
+            </div>
           </div>
-          <div class="img-div">
-            <img src="./img/turing-computer.jpg" class="img-fluid"  alt="turing machine.">
-          </div>
+
           <section id="time-line">
-            <h3>Here is the time line of allen turing's life.</h3>
+            <h3 class="heading">Here is the time line of allen turing's life.</h3>
           <p id="tribute-info">
-            <ul>
+            <ul class="lists">
               <li><strong>June 23,1912 - </strong> Alan Mathison Turing was born in Paddington, London, to Julius Mathison and Ethel Sara. Julius was employed with the 'Indian Civil Service.' Alan had a brother named John.</li>
               <li>He pursued his elementary education from 'St Michael's,' later studying at 'Sherborne School' in Dorset, starting from 1926.</li>
               <li><strong>1931 - </strong> he began attending 'King's College' at the 'University of Cambridge,' graduating in mathematics three years later with top scores.</li>
@@ -86,7 +91,7 @@
                   <div class="col "></div>
                   <div class="col "></div>-->
           </section>
-          <section id="awards">
+          <section id="legacy">
             <h3 class="heading">Legacy</h3>
             <p id="legacy-info">
               <div class="container">
@@ -103,13 +108,19 @@
           </section>
             </p>
           <p>I don't have time to write all about his genius. You should read more about this incredible human being on his <a href="https://en.wikipedia.org/wiki/Alan_Turing" id="tribute-link" target="_blank">Wikipedia entry.</a></p>
-
+        </main>
           <!--<section id="react">
 
           </section>-->
 
           <footer>
-            <p>Rain &copy 2020</p>
+            <section>
+            <ul id="footer-list">
+              <li> <a href="https://rainthecat3.itch.io/">My Game Devlog Website</a> </li>
+              <li> <a href="./games.html">Models</a> </li>
+            </ul>
+            </section>
+            <p id="copyright">Ashutosh Vishu Yadav &copy 2020</p>
           </footer>
                   </div>
     </body>
