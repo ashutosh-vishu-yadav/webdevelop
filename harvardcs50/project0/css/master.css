@@ -12,6 +12,10 @@ footer #footer-list li a { color: white; }
 body { margin-left: 40px; margin-right: 40px; background-color: #0d2561; }
 body main { background-color: #d8dfe4; }
 
+/*
+.banner{ position: relative; background: url(bg.jpg); min-height: 100vh; background-size: cover; background-position: center; padding: 250px 0 200px;
+}
+*/
 .heading { text-align: center; }
 
 #tribute-info > p { margin: auto; padding: 5px; background-color: #5f6fa2; }
@@ -29,14 +33,14 @@ div { padding: 5px; }
 @media (min-width: 576px) { .row { display:flex; } .row > .col{ margin: 30px; padding: 20px; background-color: #0d2561; } }
 */
 @media (min-width: 1200px) { .row { display: flex; }
-  .row > .col { border-top: 10px solid	#5f6fa2; margin: 20px; padding: 20px; background-color: #d8dfe4; }
+  .row > .col { border-top: 10px solid	#0d2561; color: #eeeeee; margin: 20px; padding: 20px; background-color: #5f6fa2; }
   .img-fluid { height: 100%; width: 100%; } }
 @media (max-width: 1200px) { .row { display: grid; }
-  .row > .col { border-top: 10px solid #5f6fa2; margin: 5px; padding: 20px; background-color: #d8dfe4; }
+  .row > .col { color: #eeeeee; border-top: 10px solid #0d2561; margin: 5px; padding: 20px; background-color: #5f6fa2; }
   .img-fluid { height: 100%; width: 100%; } }
-.section { border: solid black; border-radius: 4px; border-color: #3e4444; background-color: #eeeeee; }
+main { border: solid black; border-radius: 5px; border-color: #d8dfe4; background-color: #eeeeee; }
 
-.section { padding: 5px; }
+main { margin: 100px 0 100px; }
 
 div .paragraph, div .question, .lists { list-style: none; position: relative; margin: 10px; padding: 5px; border-color: #3e4444; background-color: #eeeeee; }
 

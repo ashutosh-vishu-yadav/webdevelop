@@ -1,6 +1,7 @@
 @import "ui-variables.css";
 $normal-margin: 10px;
 $normal-padding: 5px;
+
 #nav{
   float:auto;
   background-color: black;
@@ -44,7 +45,16 @@ body {
     background-color: #d8dfe4;
   }
 }
-
+/*
+.banner{
+  position: relative;
+  background: url(bg.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 250px 0 200px;
+}
+*/
 .heading{
   text-align: center;
 }
@@ -97,15 +107,16 @@ div{
 */
 // Large devices (desktops, 992px and up)
 @media (min-width: 1200px) {
-  .row ,{
+  .row {
     display:flex;
  }
  .row > .col{
-   border-top: 10px solid	#5f6fa2;
+   border-top: 10px solid	#0d2561;
+   color: #eeeeee;
    //border-radius: 10px;
    margin: 20px;
    padding: 20px;
-   background-color:   	#d8dfe4;
+   background-color:#5f6fa2;
 
  }
  .img-fluid {
@@ -118,14 +129,15 @@ div{
 
 // Extra large devices (large desktops, 1200px and up)
 @media (max-width: 1200px) {
-  .row, {
+  .row {
     display:grid;
  }
  .row > .col{
-   border-top: 10px solid #5f6fa2;
+   color: #eeeeee;
+   border-top: 10px solid #0d2561;
    margin: 5px;
    padding: 20px;
-   background-color:  #d8dfe4;
+   background-color:#5f6fa2;
  }
  .img-fluid {
 
@@ -138,14 +150,15 @@ div{
 //inheritense
 %flex-contant {
   border: solid black;
-  border-radius: 4px;
-  border-color: #3e4444;
+  border-radius: 5px;
+  border-color: #d8dfe4;
   background-color:  	#eeeeee;
 }
 
-.section {
+main {
+  margin: 100px 0 100px;
   @extend %flex-contant;
-  padding: $normal-padding;
+  //padding: $normal-padding;
 }
 
 %lists {
