@@ -45,3 +45,31 @@ flex-wrap : wrap;
 		SASS
 sass <file>.scss: <file>.css
 sass --watch <file>.scss: <file>.css
+
+
+		FLASK
+//to tell syytem which file to use as application.
+export FLASK_APP=application.py
+//flask works as a routers to perform actions
+@app.route("/")
+//------body
+
+//JINJA 2
+//a variable 
+{{variable-name}}
+//datetime module
+import datetime
+now = datetime.datetime.now()
+//telling days
+today = now.month  == 5 , now.day == 1
+//conditions
+{{if}}
+{{else}}
+{{endif}}
+//loop
+{{for name in names}}
+{{endfor}}
+//Linking with flask
+{{url_for('linker-name')}}
+//inheritance
+{%block heading%}{%end block%}
