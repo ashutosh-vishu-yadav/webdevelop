@@ -73,3 +73,25 @@ today = now.month  == 5 , now.day == 1
 {{url_for('linker-name')}}
 //inheritance
 {%block heading%}{%end block%}
+//	FLASK AND SQL
+import os 
+from sqlalchemy import create_engine
+from sqlalchemy.orm import scoped_session , sessionmaker
+//Engine - It handles connection between database 
+//make a db
+db.exeute// 
+db.commit/make changes in database
+//some .commands
+.fetchone()
+.fetchall()
+
+		SQL
+SELECT origin, COUNT(*) FROM flight GROUP BY origin;
+// GROUP BY --- HAVING
+//REFERENCE -- forignkey
+//JOIN 
+SELECT origin, destinationm name FROM flights JOIN passengers ON passengers.flight_id = flights.id WHERE name = 'Alice';
+//sql transactions
+BEGIN
+COMMIT
+
