@@ -15,7 +15,10 @@ git branch <branch name>
 git branch 
 git checkout <branch name>
 git push --set-upstream origin feature
+git push rebase
+
 //remotes
+git revert// revert the changed
 git fetch
 git merge
 
