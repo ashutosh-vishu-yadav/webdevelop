@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+<<<<<<< HEAD:harvardcs50/project0/index.html
         <title>Rain The Cat</title>
         <meta name="twitter:" content="">
+=======
+        <title>{% block title %} {% endblock %}</title>
+        <meta name="BooksSage:" content="online book store">
+>>>>>>> added a half working signup:harvardcs50/project1/templates/layout.html
         <meta charset="utf-8">
-        <meta name="description" content="Free Web tutorials">
+        <meta name="description" content="your favorite online book store.">
         <meta name="keywords" content="HTML, CSS, bootstrap">
         <meta name="author" content="rain">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='master.css') }}">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/master.css">
 
     </head>
     <body>
@@ -26,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./review.html">Linux</a>
@@ -46,6 +51,15 @@
                   </div>
                 </li>
               </ul>
+<<<<<<< HEAD:harvardcs50/project0/index.html
+=======
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><span><a class="nav-link" href="{{ url_for('login')}}">login</a></span></li>
+                <div class="">
+                </div>
+                <li class="nav-item"><span><a class="nav-link" href="{{ url_for('signup') }}">signup</a></span></li>
+              </ul>
+>>>>>>> added a half working signup:harvardcs50/project1/templates/layout.html
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>

@@ -1,0 +1,243 @@
+@import "ui-variables.css";
+$normal-margin: 10px;
+$normal-padding: 5px;
+
+#nav{
+  float:auto;
+  background-color: black;
+}
+.nav-link{
+  height: 30px;
+  float:right;
+  position:sticky;
+  padding:5px;
+  margin:auto;
+  text-decoration: none;
+}
+
+
+footer {
+  clear:both;
+  background-color:	#091b45;
+  margin: auto;
+  padding: 40px;
+  a{
+    color: black;
+  }
+  p {
+    color: white;
+    text-align: center;
+  }
+  #footer-list {
+    color: #091b45;
+    li a{
+      color: white;
+    }
+
+  }
+}
+
+body {
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #0d2561;
+  main{
+    background-color: #d8dfe4;
+  }
+}
+
+.banner {
+  position: relative;
+  background: url(bg.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 250px 0 200px;
+}
+
+.heading{
+  text-align: center;
+}
+
+#tribute-info > p{
+  margin: auto;
+  padding: 5px;
+  background-color:	#5f6fa2;
+}
+
+div{
+  padding: 5px;
+  .paragraph, .question{
+    @extend %lists;
+  }
+}
+
+
+
+
+.jumbotron, .footer-div{
+  margin: 0 20% 0 20%;
+  padding: 5%;
+  h1{
+    padding: 20px;
+    margin: 0 -20px 0 -20px;
+  }
+}
+
+/*
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 780px) {
+  .row {
+    display: grid;
+ }
+ .row > .col{
+   margin:30px;
+   padding: 20px;
+   background-color: #0d2561;
+ }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 576px) {
+   .row {
+     display:flex;
+  }
+  .row > .col{
+    margin: 30px;
+    padding: 20px;
+    background-color: #0d2561;
+  }
+ }
+*/
+// Large devices (desktops, 992px and up)
+@media (min-width: 1200px) {
+  .row {
+    display:flex;
+ }
+ .row > .col{
+   border-top: 10px solid	#0d2561;
+   color: #eeeeee;
+   //border-radius: 10px;
+   margin: 20px;
+   padding: 20px;
+   background-color:#5f6fa2;
+
+ }
+ .img-fluid {
+
+   height: 100%;
+   width: 100%;
+ }
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+  .row {
+    display:grid;
+ }
+ .row > .col{
+   color: #eeeeee;
+   border-top: 10px solid #0d2561;
+   margin: 5px;
+   padding: 20px;
+   background-color:#5f6fa2;
+ }
+ .img-fluid {
+
+   height: 100%;
+   width: 100%;
+ }
+
+}
+
+//inheritense
+%flex-contant {
+  border: solid black;
+  border-radius: 5px;
+  border-color: #d8dfe4;
+  background-color:  	#eeeeee;
+}
+
+.main {
+  margin: 100px 0 100px;
+  @extend %flex-contant;
+  //padding: $normal-padding;
+}
+
+%lists {
+  list-style: none;
+  position: relative;
+  margin: $normal-margin;
+  padding: $normal-padding;
+  border-color: #3e4444;
+  background-color:  	#eeeeee;
+}
+
+.lists  {
+  @extend %lists;
+  li {
+    padding: 5px;
+  }
+}
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+//hero-image
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/rain.png");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
