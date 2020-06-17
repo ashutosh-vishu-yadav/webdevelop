@@ -1,8 +1,15 @@
-{% extends layout.html%}
-{%block title%}
-Error
-{%endblock%}
+{% extends 'base.html' %}
 
-{%block body%}
-  <h1>Error</h1>
-{%endblock%}
+{% block header %}
+  <h1>{% block title %}Log In{% endblock %}</h1>
+{% endblock %}
+
+{% block main %}
+  <form method="post">
+    <label for="username">Username</label>
+    <input name="username" id="username" required>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required>
+    <input type="submit" value="Log In">
+  </form>
+{% endblock %}

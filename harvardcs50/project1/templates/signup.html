@@ -1,29 +1,39 @@
-{% extends layout.html%}
+{% extends "layout.html"%}
 {%block title%}
 signup
 {%endblock%}
 
-{%block body%}
-  <h1>Error</h1>
-  <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input class="form-control" name="name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+{%block main%}
+<h1>SignUp</h1>
+<form action="{{url_for('signup')}}" method="post">
+<div class="form-group">
+  <label for="username">Username</label>
+  <input class="form-control" name="uname" id="username" aria-describedby="usernamehelp" placeholder="Enter Username">
+  <small id="emailHelp" class="form-text text-muted">type in your full name.</small>
+</div>
+<div class="form-group">
+  <label for="exampleInputEmail1">Email address</label>
+  <input type="email" class="form-control" name="uemail" id="useremail" aria-describedby="emailHelp" placeholder="Enter email">
+  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
+<div class="form-group">
+  <label for="InputPassword1">Password</label>
+  <input type="password" class="form-control" name="upass" id="userpassword" placeholder="Password">
+</div>
+<div class="form-group">
+  <label for="InputPassword1">Confirm-Password</label>
+  <input type="password" class="form-control" name="urepass"  id="userrepassword" placeholder="Matching-Password">
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+<div class="error">
+  {%if result%}
+  <div class="alert alert-danger" role="alert">
+  {{result}}
+  {% for improve in improvements %}
+  <p>{{improvements[improve]}}</p>
+  {% endfor %}
   </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Confirm-Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Matching-Password">
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  {%endif%}
+</div>
 </form>
 {%endblock%}
